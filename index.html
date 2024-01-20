@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator" role="application">
+        <!-- <h1>Calculate</h1> -->
+        <input id="display" readonly placeholder="Calculate">
+        <div id="keys">
+            <button onClick="clearDisplay()" class="operator-btn-orange">C</button>
+            <button onClick="clearDisplayOne()" class="operator-btn-orange">DEL</button>
+            <button class="operator-btn-orange thanks" onClick="myFunction()"><a href="https://eugen-c-vladoi.web.app/starter.html" target="_blank">😃</a></button>
+            <!-- <p class="hide">Thank You!</p> -->
+            <button onClick="appendToDisplay('*')" class="operator-btn-orange">*</button>
+            <button onClick="appendToDisplay('7')">7</button>
+            <button onClick="appendToDisplay('8')">8</button>
+            <button onClick="appendToDisplay('9')">9</button>
+            
+            <button onClick="appendToDisplay('/')" class="operator-btn-orange">/</button>
+            <button onClick="appendToDisplay('4')">4</button>
+            <button onClick="appendToDisplay('5')">5</button>
+            <button onClick="appendToDisplay('6')">6</button>
+            
+            <button onClick="appendToDisplay('-')" class="operator-btn-orange">-</button>
+            <button onClick="appendToDisplay('1')">1</button>
+            <button onClick="appendToDisplay('2')">2</button>
+            <button onClick="appendToDisplay('3')">3</button>
+            
+            <button onClick="appendToDisplay('+')" class="operator-btn-orange">+</button>
+            <button onClick="appendToDisplay('00')">00</button>
+            <button onClick="appendToDisplay('0')">0</button>
+            <button onClick="appendToDisplay('.')">.</button>
+            <button onClick="calculate()" class="operator-btn-orange">=</button>
+            
+        </div>
+        <a href="https://eugen-c-vladoi.web.app/" target="_blank" class="copyright">© 2024 - All Rights Reserved</a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

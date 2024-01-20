@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 10%);
+    box-sizing: border-box;
+}
+
+.calculator {
+    max-width: 400px;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 20%);
+    /* border-radius: 20px; */
+    box-shadow: 5px 10px 10px 5px #ffd700;
+    overflow: hidden;
+}
+
+#display {
+    width: 90%;
+    padding: 20px;
+    font-size: 2.5rem;
+    text-align: right;
+    border: none;
+    background-color: hsl(0, 0%, 35%);
+    color: #fff;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 60%);
+}
+
+.operator-btn-orange {
+    background-color: hsl(10, 100%, 30%);
+}
+
+.operator-btn-orange:hover {
+    background-color: hsl(10, 100%, 10%);
+}
+
+.operator-btn-orange:active {
+    background-color: hsl(10, 100%, 60%);
+}
+
+#keys button a {
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+#keys .operator-btn-orange a:hover {
+    font-size: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.thanks:hover +.hide {
+    display: block;
+    color: green;
+}
+
+.copyright {
+    text-decoration: none;
+    color: #ffd700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 3s ease-in-out;
+    transition-delay: 3s;
+    opacity: 0.2;
+}
+
+.calculator:hover .copyright {
+    opacity: 1;
+    transition: all 3s ease-in-out;
+}
